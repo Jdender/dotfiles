@@ -5,16 +5,23 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="af-magic"
 
 plugins=(
+
   sudo
-  nvm
-  archlinux
+  zsh-autosuggestions
   command-not-found
-  docker
-  docker-compose
-  extract
+
+  archlinux
+  tmux
+  git
+
+  nvm
   yarn
   cargo
-  tmux
+
+  docker
+  docker-compose
+
+  extract
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -27,6 +34,8 @@ alias vim="nvim"
 alias mix="pulsemixer"
 
 alias net="nmtui"
+
+alias music="cmus"
 
 
 export PATH="$PATH:$(yarn global bin):$HOME/.cargo/bin"
