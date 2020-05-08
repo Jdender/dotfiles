@@ -29,16 +29,10 @@ source $ZSH/oh-my-zsh.sh
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
-alias vim="nvim"
-
-alias mix="pulsemixer"
-
-alias net="nmtui"
-
-alias music="cmus"
+alias screenshot="maim -s | xclip -selection clipboard -t image/png"
 
 
-export PATH="$PATH:$(yarn global bin):$HOME/.cargo/bin"
+export PATH="$PATH:$(yarn --offline global bin):$HOME/.cargo/bin"
 
 export EDITOR="nvim"
 
