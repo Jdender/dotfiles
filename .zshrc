@@ -26,6 +26,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+eval "$(direnv hook zsh)"
+
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
