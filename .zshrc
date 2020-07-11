@@ -2,7 +2,7 @@
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="af-magic"
+eval "$(starship init zsh)"
 
 plugins=(
 
@@ -37,4 +37,9 @@ alias screenshot="maim -s | xclip -selection clipboard -t image/png"
 export PATH="$PATH:$(yarn --offline global bin):$HOME/.cargo/bin"
 
 export EDITOR="nvim"
+
+
+export WASMTIME_HOME="$HOME/.wasmtime"
+
+export PATH="$WASMTIME_HOME/bin:$PATH"
 
