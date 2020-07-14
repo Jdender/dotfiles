@@ -5,22 +5,8 @@ export ZSH="$HOME/.oh-my-zsh"
 eval "$(starship init zsh)"
 
 plugins=(
-
   sudo
   zsh-autosuggestions
-  command-not-found
-
-  archlinux
-  tmux
-  git
-
-  nvm
-  yarn
-  cargo
-
-  docker
-  docker-compose
-
   extract
 )
 
